@@ -68,5 +68,9 @@
     input[type=number] {text-align: right;}
 
     body {
-        background-color: #6a68b1;
+        background-color: #454386;
+    }
+
+    button{
+        color: #3632a5;
     }
