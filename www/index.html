@@ -94,7 +94,21 @@
     function clock(hour,minute,second,hide){
         var canvas = $('#mycanvas')[0];
         var ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.4)'; 
+        //ctx.fillStyle = 'rgba(215, 234, 243, 0.1)';
+        var syou = period/5;
+        if(rest/syou<=0){
+            ctx.fillStyle = 'rgba(215, 234, 243, 0.2)';
+        }else if(rest/syou<=1){
+            ctx.fillStyle = 'rgba(189, 218, 231, 0.3)';
+        }else if(rest/syou<=2){
+            ctx.fillStyle = 'rgba(129, 173, 193, 0.3)';
+        }else if(rest/syou<=3){
+            ctx.fillStyle = 'rgba(96, 149, 173, 0.3)';
+        }else if(rest/syou<=4){
+            ctx.fillStyle = 'rgba(65, 122, 148, 0.3)';
+        }else if(rest/syou<=5){
+            ctx.fillStyle = 'rgba(60, 110, 134, 0.3)';
+        }
         ctx.fillRect(0,0,canvas.width,canvas.height);
         var cx = canvas.width/2;
         var cy = canvas.height/2;
@@ -185,7 +199,6 @@
     function btnAClick(e){
         active=true;
         startTime=new Date();
-        
     }
 
     // ButtonBがクリックされた時の処理
