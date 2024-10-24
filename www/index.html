@@ -110,6 +110,103 @@
             ctx.fillStyle = 'rgba(60, 110, 134, 0.3)';
         }
         ctx.fillRect(0,0,canvas.width,canvas.height);
+        
+        var canvas = document.getElementById('mycanvas');
+        var ctx = canvas.getContext('2d');
+        var awa = period/10;
+        
+        if(rest/awa<=0){ 
+            ctx.beginPath();
+            ctx.arc(330, 40, 17, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(96, 149, 173, 0.2)';
+            ctx.lineWidth = 2.5;
+            ctx.stroke();
+        }else if(rest/awa<=2){
+            ctx.beginPath();
+            ctx.arc(45, 50, 20, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(96, 149, 173, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(50, 85, 7, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(96, 149, 173, 0.2)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(290, 115, 17, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(129, 173, 193, 0.05)';
+            ctx.lineWidth = 2.5;
+            ctx.stroke();
+        }else if(rest/awa<=4){
+            ctx.beginPath();
+            ctx.arc(90, 125, 20, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(129, 173, 193, 0.12)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(85, 160, 7, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(129, 173, 193, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(310, 185, 17, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(142, 182, 209, 0.1)';
+            ctx.lineWidth = 2.5;
+            ctx.stroke();
+        }else if(rest/awa<=6){
+            ctx.beginPath();
+            ctx.arc(50, 195, 15, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(142, 182, 209, 0.1)';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(55, 223, 5, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(142, 182, 209, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(280, 255, 12, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(165, 198, 222, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+        }else if(rest/awa<=8){
+            ctx.beginPath();
+            ctx.arc(85, 265, 15, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(165, 198, 222, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(80, 293, 5, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(165, 198, 222, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke(); 
+
+            ctx.beginPath();
+            ctx.arc(320, 320, 12, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(215, 234, 243, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+        }else if(rest/awa<=10){
+            ctx.beginPath();
+            ctx.arc(55, 330, 15, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(189, 218, 231, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke(); 
+
+            ctx.beginPath();
+            ctx.arc(60, 357, 5, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(189, 218, 231, 0.1)';
+            ctx.lineWidth = 3;
+            ctx.stroke(); 
+        }
+
         var cx = canvas.width/2;
         var cy = canvas.height/2;
         var ds = second/60;
